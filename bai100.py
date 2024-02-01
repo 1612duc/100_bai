@@ -6,8 +6,8 @@ for i in range(1, n):
     a = []
     while s < n:
         s += i
-        i += 1
         a.append(str(i))
+        i += 1
     if s == n:
         d += 1
         kq. append(a)
