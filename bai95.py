@@ -1,6 +1,9 @@
-def day(x):
-    if 1 <= x <= 3:
-        return 1
-    return day(x - 1) + day(x - 3)
 n = int(input())
-print(day(n))
+a = [0, 1, 1, 1]
+if n <= 3:
+    print(1)
+else:
+    for i in range(4, n+1):
+        x = a[i-1] + a[i-3]
+        a.append(x)
+    print(a[n])
