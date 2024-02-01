@@ -1,0 +1,1 @@
+ngay, n = input().split()
